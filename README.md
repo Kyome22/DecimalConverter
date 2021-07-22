@@ -3,4 +3,4 @@
 
 ![screenshot](./resources/screenshot.png)
 
-Download は Releases から installer.zip をダウンロード。
+Releases から installer.zip をダウンロード。
