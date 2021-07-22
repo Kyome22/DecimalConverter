@@ -3,4 +3,10 @@
 
 ![screenshot](./resources/screenshot.png)
 
-Releases から installer.zip をダウンロード。
+
+## インストール方法
+1. Releases から installer.zip をダウンロード
+2. zipを解凍して 0b0x installer.dmgを開く
+3. アプリをアプリケーションフォルダにコピー
+
+![screenshot](./resources/install.png)
