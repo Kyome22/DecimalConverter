@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1C38111726A5D2910013E2CF"
-               BuildableName = "DecimalConverter.app"
+               BuildableName = "0b0x.app"
                BlueprintName = "DecimalConverter"
                ReferencedContainer = "container:DecimalConverter.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C38111726A5D2910013E2CF"
-            BuildableName = "DecimalConverter.app"
+            BuildableName = "0b0x.app"
             BlueprintName = "DecimalConverter"
             ReferencedContainer = "container:DecimalConverter.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C38111726A5D2910013E2CF"
-            BuildableName = "DecimalConverter.app"
+            BuildableName = "0b0x.app"
             BlueprintName = "DecimalConverter"
             ReferencedContainer = "container:DecimalConverter.xcodeproj">
          </BuildableReference>

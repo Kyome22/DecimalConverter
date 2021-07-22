@@ -43,6 +43,12 @@ extension String {
     
 }
 
+extension NSColor {
+    
+    static let url = NSColor(named: "urlColor")!
+    
+}
+
 extension NSTextField {
     
     func diff(_ textField: NSTextField) -> NSTextField? {

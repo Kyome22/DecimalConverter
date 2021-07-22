@@ -24,10 +24,10 @@ class ConverterVC: NSViewController {
     
     @IBAction func openMenu(_ sender: NSButton) {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "About 0b0x",
+        menu.addItem(NSMenuItem(title: "0b0xについて",
                                 action: #selector(openAbout(_:)),
                                 keyEquivalent: ""))
-        menu.addItem(NSMenuItem(title: "Quit 0b0x",
+        menu.addItem(NSMenuItem(title: "0b0xを終了",
                                 action: #selector(NSApp.terminate(_:)),
                                 keyEquivalent: ""))
         NSMenu.popUpContextMenu(menu, with: NSApp.currentEvent!, for: sender)
@@ -35,7 +35,15 @@ class ConverterVC: NSViewController {
     
     @objc func openAbout(_ sender: NSMenuItem) {
         NSApp.activate(ignoringOtherApps: true)
-        NSApp.orderFrontStandardAboutPanel(nil)
+        let mutableAttrStr = NSMutableAttributedString()
+        var attr: [NSAttributedString.Key : Any] = [.foregroundColor : NSColor.textColor]
+        let message = "0b0xはオープンソースソフトウェアです。\n"
+        mutableAttrStr.append(NSAttributedString(string: message, attributes: attr))
+        let url = "https://github.com/Kyome22/DecimalConverter"
+        attr = [.foregroundColor : NSColor.url, .link : url]
+        mutableAttrStr.append(NSAttributedString(string: url, attributes: attr))
+        let key = NSApplication.AboutPanelOptionKey.credits
+        NSApp.orderFrontStandardAboutPanel(options: [key: mutableAttrStr])
     }
     
 }
